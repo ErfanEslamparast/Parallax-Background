@@ -1,0 +1,80 @@
+/* Animations */
+@keyframes slide-Down {
+  0% {
+    transform: translateY(-1500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(2000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.total-container {
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+/* .bottom-container {
+  transform: scale(1.1);
+} */
+
+.layer1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #86b6f8;
+}
+.layer2 {
+  background: url("svg/lay2.svg") no-repeat center center fixed;
+  animation: slide-Down 0.5s ease-in both;
+}
+.layer3 {
+  background: url("svg/lay3.svg") no-repeat center center fixed;
+  animation: slide-up 0.5s 0.25s ease-in both;
+}
+.layer4 {
+  background: url("svg/lay4.svg") no-repeat center center fixed;
+  animation: slide-up 0.5s 0.4s ease both;
+}
+.layer5 {
+  background: url("svg/lay5.svg") no-repeat center center fixed;
+  animation: slide-up 0.5s 0.55s ease both;
+}
+.layer6 {
+  background: url("svg/lay6.svg") no-repeat center center fixed;
+  animation: slide-up 0.5s 0.7s ease-out both;
+}
+.layer7 {
+  background: url("svg/lay7.svg") no-repeat center center fixed;
+  animation: slide-up 0.5s 0.85s ease-out both;
+}
+.layer8 {
+  background: url("svg/lay8.svg") no-repeat center center fixed;
+  animation: slide-up 0.5s 1s ease-out both;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  transform: translateX(0);
+}
